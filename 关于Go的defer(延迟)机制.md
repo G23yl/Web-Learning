@@ -20,7 +20,7 @@ func main() {
 ```Go
 func f() {
 	i := 0
-	defer func(i int) {fmt.Println(i)}()
+	defer func(i int) {fmt.Println(i)}(i)
 	i++
 }
 ```
